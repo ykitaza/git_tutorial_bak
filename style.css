@@ -1,0 +1,173 @@
+a {
+    /* color: gray; */
+    cursor: pointer;
+    text-decoration: none;
+}
+
+body {
+    margin: 0 auto;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(247, 247, 247);
+}
+
+header {
+    height: 80px;
+    display: flex;
+}
+
+.header-content {
+    margin: auto 0;
+    padding-right: 20px;
+}
+
+.header-left {
+    width: 350px;
+    display: flex;
+}
+
+.header-left a {
+    color: black;
+    margin-left: 50px;
+    font-size: 15px;
+    /* padding: 20px 0; */
+}
+
+.header-left :after{
+content:"";
+display:block;
+height:1.5px;
+margin-top:20px;
+background: linear-gradient(to right, white 1%,rgba(0, 0, 0, 0.209) 50%,white 100%);
+}
+
+
+.header-left .fa-k:before {
+    border: solid 1px black;
+    color: black;
+    font-size: 23px;
+    margin-right: 12px;
+    padding: 0 6px 0 3px;
+}
+
+
+
+.header-center {
+    flex: 1;
+    display: flex;
+    padding-bottom: 10px;
+}
+
+.header-right {
+    width: 250px;
+    display: flex;
+    padding-bottom: 40px;
+    justify-content: flex-end;
+}
+
+.container {
+    flex: 1;
+    display: flex;
+}
+
+nav {
+    width: 350px;
+}
+
+main {
+    flex: 1;
+    padding: 50px;
+    /* margin: 20px; */
+    border-radius: 20px;
+    background-color: white;
+}
+
+main .title {
+    font-size: 23px;
+    font-weight: bold;
+    padding: 20px 0;
+}
+
+.sub-container {
+    display: flex;
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(174, 174, 174, 0.667);
+}
+
+.sub-container .area-img {
+    width: 50px;
+    height: 50px;
+    border-radius:5px;
+}
+
+.area-img img{
+    border-radius: 5px;
+}
+
+.sub-container .menu{
+    margin-right: 10px;
+}
+.sub-container .area {
+    width: 200px;
+}
+.sub-container .width {
+
+}
+
+.sub-container .height {
+
+}
+
+.sub-container .layout {
+
+}
+
+.sub-container .button {
+
+}
+
+
+.movie-container {
+    display: flex;
+    height: 450px;
+    padding:10px 0 ;
+}
+
+.movie {
+    flex:9;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.movie .yukika {
+    height:100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: 1;
+}
+
+.movie .tree {
+    height: 85%;
+    width: 70%;
+    object-fit: cover;
+    position: absolute;
+    z-index: 2;
+}
+
+.movie img{
+    position: absolute;
+    z-index: 3;
+    top: 12px;
+    right: 20px;
+    height: 50px;
+}
+
+.movie-container .logo{
+    flex: 1;
+}
+
+aside {
+    width: 300px;
+}
